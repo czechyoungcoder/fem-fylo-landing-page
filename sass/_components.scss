@@ -1,0 +1,94 @@
+//INPUT
+.input {
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-family: inherit;
+  outline: none;
+  border: 0;
+}
+
+.btn {
+  font-family: inherit;
+  background-color: $bright-blue;
+  border-radius: 4px;
+  color: $white;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.green-link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $moderate-cyan;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    border-bottom: 1px solid $moderate-cyan;
+    margin-bottom: 1.6rem;
+    transition: all 0.3s;
+    border-radius: 3px;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    margin: 2rem 0;
+  }
+
+  &:hover {
+    background-color: darken($light-grayish-blue, 2%);
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+}
+
+.testimonial {
+  padding: 5rem 2.5rem 2rem;
+  font-size: 1.4rem;
+  background: url("../img/icon-quotes.svg") no-repeat 2.5rem 2.5rem;
+  background-color: $white;
+  line-height: 1.7;
+  box-shadow: 0 1rem 2rem rgba($black, 0.1);
+  margin: 3rem 0;
+  max-width: 40rem;
+  border-radius: 4px;
+
+  @media only screen and (max-width: 56.25em) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+  }
+
+  &__person {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    border-radius: 50%;
+    height: 5rem;
+    margin-right: 1.25rem;
+  }
+
+  &__name {
+    display: block;
+    font-weight: 700;
+  }
+
+  &__about {
+    font-size: 1.3rem;
+  }
+}

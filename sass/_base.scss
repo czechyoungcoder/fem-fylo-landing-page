@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+// Typography
+
+.secondary-heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: 56.25em) {
+    text-align: center;
+  }
+}
+
+.tertiary-heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 1.6rem;
+
+  @media only screen and (max-width: 56.25em) {
+    text-align: center;
+  }
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}

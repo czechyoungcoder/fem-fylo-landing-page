@@ -1,0 +1,42 @@
+.cta {
+  @include flex;
+  @include flex-two-col;
+  padding: 5rem;
+  @include side-padding;
+  background-color: $desaturated-blue;
+  color: white;
+
+  @media only screen and (max-width: 56.25em) {
+    text-align: center;
+    padding-bottom: 7rem;
+  }
+
+  &__text {
+    width: 40%;
+
+    @media only screen and (max-width: 56.25em) {
+      width: 100%;
+    }
+  }
+
+  &__input {
+    width: 90%;
+    max-width: 50rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 1rem 3rem rgba($black, 0.2);
+
+    @media only screen and (max-width: 56.25em) {
+      max-width: 100%;
+    }
+  }
+
+  &__btn {
+    width: 35%;
+    min-width: 18rem;
+
+    @media only screen and (max-width: 56.25em) {
+      width: 90%;
+      min-width: 0;
+    }
+  }
+}

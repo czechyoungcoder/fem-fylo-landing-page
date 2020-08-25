@@ -1,0 +1,77 @@
+.footer {
+  background-color: $very-dark-blue;
+  padding: 4rem;
+  @include side-padding;
+  color: $white;
+
+  @media only screen and (max-width: 56.25em) {
+    padding-bottom: 1rem;
+  }
+
+  &__logo {
+    height: 3rem;
+    display: block;
+    color: $white;
+    margin-bottom: 1.5rem;
+
+    @media only screen and (max-width: 56.25em) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+
+    @media only screen and (max-width: 56.25em) {
+      flex-direction: column;
+    }
+  }
+
+  &__section {
+    @media only screen and (max-width: 56.25em) {
+      margin-bottom: 3rem;
+    }
+
+    &:nth-last-child(1) {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $white;
+  }
+
+  .contact-icon {
+    width: 1.25rem;
+    margin-right: 1rem;
+  }
+
+  .social-icon {
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    width: 2rem;
+    border: 1px solid $white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    transition: all 0.3s;
+
+    &:hover {
+      background: $white;
+      color: $very-dark-blue;
+    }
+  }
+}
