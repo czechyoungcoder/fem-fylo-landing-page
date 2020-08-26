@@ -56,11 +56,12 @@
   font-size: 1.4rem;
   background: url("../img/icon-quotes.svg") no-repeat 2.5rem 2.5rem;
   background-color: $white;
-  line-height: 1.7;
+  line-height: 1.8;
   box-shadow: 0 1rem 2rem rgba($black, 0.1);
   margin: 3rem 0;
   max-width: 40rem;
   border-radius: 4px;
+  text-align: left;
 
   @media only screen and (max-width: 56.25em) {
     margin-left: auto;
